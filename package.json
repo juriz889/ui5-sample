@@ -8,7 +8,8 @@
   },
   "devDependencies": {
     "@cap-js/sqlite": "^2.4",
-    "@sap/cds-dk": "^10"
+    "@sap/cds-dk": "^10",
+    "cds-plugin-ui5": "^0.17.4"
   },
   "scripts": {
     "start": "cds-serve",
@@ -22,5 +23,8 @@
         "db": "hana"
       }
     }
-  }
+  },
+  "sapux": [
+    "app/react-ui"
+  ]
 }

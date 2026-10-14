@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter, Route, Routes } from "react-router";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router";
 import "./index.css";
 import About from "./pages/About.tsx";
 import { BookDetail } from "./pages/BookDetail.tsx";
@@ -15,7 +15,7 @@ const client = new QueryClient();
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <QueryClientProvider client={client}>
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <Routes>
           <Route element={<MainLayout />}>
             <Route path="/" element={<ServerData />} />
@@ -24,6 +24,7 @@ createRoot(document.getElementById("root")!).render(
             <Route path="create" element={<CreateBook />} />
 
             <Route path="books/:id" element={<BookDetail />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Route>
         </Routes>
       </BrowserRouter>
