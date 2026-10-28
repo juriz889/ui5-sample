@@ -1,0 +1,57 @@
+[
+  {
+    "createdAt": "2026-10-28T08:49:22.984Z",
+    "modifiedAt": "2026-10-28T08:49:22.984Z",
+    "ID": 201,
+    "author": "Emily Brontë",
+    "title": "Wuthering Heights",
+    "genre": "Drama",
+    "stock": 12,
+    "price": 11.11,
+    "currency": "£"
+  },
+  {
+    "createdAt": "2026-10-28T08:49:22.984Z",
+    "modifiedAt": "2026-10-28T08:49:22.984Z",
+    "ID": 207,
+    "author": "Charlotte Brontë",
+    "title": "Jane Eyre",
+    "genre": "Drama",
+    "stock": 11,
+    "price": 12.34,
+    "currency": "£"
+  },
+  {
+    "createdAt": "2026-10-28T08:49:22.984Z",
+    "modifiedAt": "2026-10-28T08:49:22.984Z",
+    "ID": 251,
+    "author": "Edgar Allen Poe",
+    "title": "The Raven -- 11% discount!",
+    "genre": "Mystery",
+    "stock": 333,
+    "price": 13.13,
+    "currency": "$"
+  },
+  {
+    "createdAt": "2026-10-28T08:49:22.984Z",
+    "modifiedAt": "2026-10-28T08:49:22.984Z",
+    "ID": 252,
+    "author": "Edgar Allen Poe",
+    "title": "Eleonora -- 11% discount!",
+    "genre": "Romance",
+    "stock": 555,
+    "price": 14,
+    "currency": "$"
+  },
+  {
+    "createdAt": "2026-10-28T08:49:22.984Z",
+    "modifiedAt": "2026-10-28T08:49:22.984Z",
+    "ID": 271,
+    "author": "Richard Carpenter",
+    "title": "Catweazle",
+    "genre": "Fantasy",
+    "stock": 22,
+    "price": 150,
+    "currency": "¥"
+  }
+]

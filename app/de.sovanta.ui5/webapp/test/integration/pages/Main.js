@@ -1,5 +1,12 @@
-sap.ui.define(["sap/ui/test/Opa5", "sap/ui/test/actions/Press"], function (Opa5, Press) {
+sap.ui.define(["sap/ui/test/Opa5", "sap/ui/test/actions/Press", "sap/ui/test/matchers/AggregationFilled", "sap/ui/test/matchers/Properties"], function (
+	Opa5,
+	Press,
+	AggregationFilled,
+	Properties
+) {
 	"use strict";
+
+	const sViewName = "de.sovanta.ui5.view.Main";
 
 	Opa5.createPageObjects({
 		onTheMainPage: {
@@ -7,7 +14,7 @@ sap.ui.define(["sap/ui/test/Opa5", "sap/ui/test/actions/Press"], function (Opa5,
 				iPressTheSayHelloButton: function () {
 					return this.waitFor({
 						id: "helloButton",
-						viewName: "de.sovanta.ui5.view.Main",
+						viewName: sViewName,
 						actions: new Press(),
 						errorMessage: "Did not find the 'Say Hello With Dialog' button on the App view"
 					});
@@ -17,9 +24,28 @@ sap.ui.define(["sap/ui/test/Opa5", "sap/ui/test/actions/Press"], function (Opa5,
 					return this.waitFor({
 						controlType: "sap.m.Button",
 						searchOpenDialogs: true,
-						viewName: "de.sovanta.ui5.view.Main",
+						viewName: sViewName,
 						actions: new Press(),
 						errorMessage: "Did not find the 'OK' button in the Dialog"
+					});
+				},
+
+				iPressOnTheBook: function (sTitle) {
+					return this.waitFor({
+						controlType: "sap.m.ObjectIdentifier",
+						viewName: sViewName,
+						matchers: new Properties({ title: sTitle }),
+						actions: new Press(),
+						errorMessage: "Did not find the book '" + sTitle + "' in the table"
+					});
+				},
+
+				iPressTheCreateButton: function () {
+					return this.waitFor({
+						id: "createButton",
+						viewName: sViewName,
+						actions: new Press(),
+						errorMessage: "Did not find the 'Create' button"
 					});
 				}
 			},
@@ -45,6 +71,18 @@ sap.ui.define(["sap/ui/test/Opa5", "sap/ui/test/actions/Press"], function (Opa5,
 						success: function () {
 							Opa5.assert.ok(true, "No dialog is open");
 						}
+					});
+				},
+
+				iShouldSeeTheBooksTable: function () {
+					return this.waitFor({
+						id: "booksTable",
+						viewName: sViewName,
+						matchers: new AggregationFilled({ name: "items" }),
+						success: function () {
+							Opa5.assert.ok(true, "The table shows books");
+						},
+						errorMessage: "The books table is not shown or has no items"
 					});
 				}
 			}

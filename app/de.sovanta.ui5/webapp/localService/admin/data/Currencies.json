@@ -1,0 +1,112 @@
+[
+  {
+    "name": "Australian Dollar",
+    "descr": "Australian Dollar",
+    "code": "AUD",
+    "symbol": "$",
+    "minorUnit": null,
+    "numcode": 36,
+    "exponent": 2,
+    "minor": "Cent"
+  },
+  {
+    "name": "Canadian Dollar",
+    "descr": "Canadian Dollar",
+    "code": "CAD",
+    "symbol": "$",
+    "minorUnit": null,
+    "numcode": 124,
+    "exponent": 2,
+    "minor": "Cent"
+  },
+  {
+    "name": "Yuan",
+    "descr": "Chinese Yuan Renminbi",
+    "code": "CNY",
+    "symbol": "¥",
+    "minorUnit": null,
+    "numcode": 156,
+    "exponent": 1,
+    "minor": "Jiao"
+  },
+  {
+    "name": "Euro",
+    "descr": "European Euro",
+    "code": "EUR",
+    "symbol": "€",
+    "minorUnit": null,
+    "numcode": 978,
+    "exponent": 2,
+    "minor": "Cent"
+  },
+  {
+    "name": "British Pound",
+    "descr": "Great Britain Pound",
+    "code": "GBP",
+    "symbol": "£",
+    "minorUnit": null,
+    "numcode": 826,
+    "exponent": 2,
+    "minor": "Penny"
+  },
+  {
+    "name": "Shekel",
+    "descr": "Israeli New Shekel",
+    "code": "ILS",
+    "symbol": "₪",
+    "minorUnit": null,
+    "numcode": 376,
+    "exponent": 2,
+    "minor": "Agorat"
+  },
+  {
+    "name": "Rupee",
+    "descr": "Indian Rupee",
+    "code": "INR",
+    "symbol": "₹",
+    "minorUnit": null,
+    "numcode": 356,
+    "exponent": 2,
+    "minor": "Paise"
+  },
+  {
+    "name": "Yen",
+    "descr": "Japanese Yen",
+    "code": "JPY",
+    "symbol": "¥",
+    "minorUnit": null,
+    "numcode": 392,
+    "exponent": 2,
+    "minor": "Sen"
+  },
+  {
+    "name": "Riyal",
+    "descr": "Katar Riyal",
+    "code": "QAR",
+    "symbol": "﷼",
+    "minorUnit": null,
+    "numcode": 356,
+    "exponent": 2,
+    "minor": "Dirham"
+  },
+  {
+    "name": "Riyal",
+    "descr": "Saudi Riyal",
+    "code": "SAR",
+    "symbol": "﷼",
+    "minorUnit": null,
+    "numcode": 682,
+    "exponent": 2,
+    "minor": "Halala"
+  },
+  {
+    "name": "US Dollar",
+    "descr": "United States Dollar",
+    "code": "USD",
+    "symbol": "$",
+    "minorUnit": null,
+    "numcode": 840,
+    "exponent": 2,
+    "minor": "Cent"
+  }
+]

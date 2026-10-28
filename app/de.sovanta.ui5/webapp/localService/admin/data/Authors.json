@@ -1,0 +1,50 @@
+[
+  {
+    "createdAt": "2026-10-28T08:49:22.985Z",
+    "createdBy": "anonymous",
+    "modifiedAt": "2026-10-28T08:49:22.985Z",
+    "modifiedBy": "anonymous",
+    "ID": 101,
+    "name": "Emily Brontë",
+    "dateOfBirth": "1818-07-30",
+    "dateOfDeath": "1848-12-19",
+    "placeOfBirth": "Thornton, Yorkshire",
+    "placeOfDeath": "Haworth, Yorkshire"
+  },
+  {
+    "createdAt": "2026-10-28T08:49:22.985Z",
+    "createdBy": "anonymous",
+    "modifiedAt": "2026-10-28T08:49:22.985Z",
+    "modifiedBy": "anonymous",
+    "ID": 107,
+    "name": "Charlotte Brontë",
+    "dateOfBirth": "1818-04-21",
+    "dateOfDeath": "1855-03-31",
+    "placeOfBirth": "Thornton, Yorkshire",
+    "placeOfDeath": "Haworth, Yorkshire"
+  },
+  {
+    "createdAt": "2026-10-28T08:49:22.985Z",
+    "createdBy": "anonymous",
+    "modifiedAt": "2026-10-28T08:49:22.985Z",
+    "modifiedBy": "anonymous",
+    "ID": 150,
+    "name": "Edgar Allen Poe",
+    "dateOfBirth": "1809-01-19",
+    "dateOfDeath": "1849-10-07",
+    "placeOfBirth": "Boston, Massachusetts",
+    "placeOfDeath": "Baltimore, Maryland"
+  },
+  {
+    "createdAt": "2026-10-28T08:49:22.985Z",
+    "createdBy": "anonymous",
+    "modifiedAt": "2026-10-28T08:49:22.985Z",
+    "modifiedBy": "anonymous",
+    "ID": 170,
+    "name": "Richard Carpenter",
+    "dateOfBirth": "1929-08-14",
+    "dateOfDeath": "2012-02-26",
+    "placeOfBirth": "King’s Lynn, Norfolk",
+    "placeOfDeath": "Hertfordshire, England"
+  }
+]

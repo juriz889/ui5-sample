@@ -1,0 +1,254 @@
+[
+  {
+    "ID": "10aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Fiction",
+    "descr": null,
+    "parent_ID": null
+  },
+  {
+    "ID": "11aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Drama",
+    "descr": null,
+    "parent_ID": "10aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  },
+  {
+    "ID": "12aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Poetry",
+    "descr": null,
+    "parent_ID": "10aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  },
+  {
+    "ID": "131aaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Fairy Tale",
+    "descr": null,
+    "parent_ID": "13aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  },
+  {
+    "ID": "132aaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Epic Fantasy",
+    "descr": null,
+    "parent_ID": "13aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  },
+  {
+    "ID": "133aaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "High Fantasy",
+    "descr": null,
+    "parent_ID": "13aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  },
+  {
+    "ID": "134aaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Gothic",
+    "descr": null,
+    "parent_ID": "13aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  },
+  {
+    "ID": "13aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Fantasy",
+    "descr": null,
+    "parent_ID": "10aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  },
+  {
+    "ID": "1411aaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Utopian",
+    "descr": null,
+    "parent_ID": "141aaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  },
+  {
+    "ID": "141211aa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Steampunk",
+    "descr": null,
+    "parent_ID": "14121aaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  },
+  {
+    "ID": "14121aaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Cyberpunk",
+    "descr": null,
+    "parent_ID": "1412aaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  },
+  {
+    "ID": "1412aaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Dystopian",
+    "descr": null,
+    "parent_ID": "141aaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  },
+  {
+    "ID": "141aaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Utopian and Dystopian",
+    "descr": null,
+    "parent_ID": "14aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  },
+  {
+    "ID": "142aaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Space Opera",
+    "descr": null,
+    "parent_ID": "14aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  },
+  {
+    "ID": "143aaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Time Travel",
+    "descr": null,
+    "parent_ID": "14aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  },
+  {
+    "ID": "144aaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Tech Noir",
+    "descr": null,
+    "parent_ID": "14aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  },
+  {
+    "ID": "14aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Science Fiction",
+    "descr": null,
+    "parent_ID": "10aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  },
+  {
+    "ID": "151aaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Contemporary Romance",
+    "descr": null,
+    "parent_ID": "15aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  },
+  {
+    "ID": "152aaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Historical Romance",
+    "descr": null,
+    "parent_ID": "15aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  },
+  {
+    "ID": "153aaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Romantic Suspense",
+    "descr": null,
+    "parent_ID": "15aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  },
+  {
+    "ID": "15aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Romance",
+    "descr": null,
+    "parent_ID": "10aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  },
+  {
+    "ID": "16111aaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Police Procedural",
+    "descr": null,
+    "parent_ID": "1611aaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  },
+  {
+    "ID": "16112aaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Legal Thriller",
+    "descr": null,
+    "parent_ID": "1611aaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  },
+  {
+    "ID": "16113aaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Medical Thriller",
+    "descr": null,
+    "parent_ID": "1611aaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  },
+  {
+    "ID": "16114aaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Spy Thriller",
+    "descr": null,
+    "parent_ID": "1611aaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  },
+  {
+    "ID": "1611aaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Thriller",
+    "descr": null,
+    "parent_ID": "161aaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  },
+  {
+    "ID": "1612aaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Detective",
+    "descr": null,
+    "parent_ID": "161aaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  },
+  {
+    "ID": "1613aaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Suspense",
+    "descr": null,
+    "parent_ID": "161aaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  },
+  {
+    "ID": "161aaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Crime",
+    "descr": null,
+    "parent_ID": "16aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  },
+  {
+    "ID": "1621aaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Nordic Noir",
+    "descr": null,
+    "parent_ID": "162aaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  },
+  {
+    "ID": "1622aaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Tart Noir",
+    "descr": null,
+    "parent_ID": "162aaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  },
+  {
+    "ID": "162aaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Noir",
+    "descr": null,
+    "parent_ID": "16aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  },
+  {
+    "ID": "163aaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Cozy Mystery",
+    "descr": null,
+    "parent_ID": "16aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  },
+  {
+    "ID": "16aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Mystery",
+    "descr": null,
+    "parent_ID": "10aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  },
+  {
+    "ID": "17aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Adventure",
+    "descr": null,
+    "parent_ID": "10aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  },
+  {
+    "ID": "18aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Short Story",
+    "descr": null,
+    "parent_ID": "10aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  },
+  {
+    "ID": "19aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Graphic Novel",
+    "descr": null,
+    "parent_ID": "10aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  },
+  {
+    "ID": "20aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Non-Fiction",
+    "descr": null,
+    "parent_ID": null
+  },
+  {
+    "ID": "21aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Biography",
+    "descr": null,
+    "parent_ID": "20aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  },
+  {
+    "ID": "22aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Autobiography",
+    "descr": null,
+    "parent_ID": "21aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  },
+  {
+    "ID": "23aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Essay",
+    "descr": null,
+    "parent_ID": "20aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  },
+  {
+    "ID": "24aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "name": "Speech",
+    "descr": null,
+    "parent_ID": "20aaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+  }
+]
