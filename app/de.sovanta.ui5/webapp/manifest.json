@@ -10,6 +10,22 @@
 		"applicationVersion": {
 			"version": "${version}"
 		},
+		"dataSources": {
+			"catalogService": {
+				"uri": "/odata/v4/catalog/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "4.0"
+				}
+			},
+			"adminService": {
+				"uri": "/odata/v4/admin/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "4.0"
+				}
+			}
+		},
 		"sourceTemplate": {
 			"id": "generator-ui5-app",
 			"version": "1.1.0"
@@ -37,7 +53,8 @@
 			"minUI5Version": "1.153.0",
 			"libs": {
 				"sap.ui.core": {},
-				"sap.m": {}
+				"sap.m": {},
+				"sap.ui.layout": {}
 			}
 		},
 
@@ -49,6 +66,21 @@
 		},
 
 		"models": {
+			"": {
+				"dataSource": "catalogService",
+				"settings": {
+					"operationMode": "Server",
+					"autoExpandSelect": true,
+					"earlyRequests": true
+				}
+			},
+			"admin": {
+				"dataSource": "adminService",
+				"settings": {
+					"operationMode": "Server",
+					"autoExpandSelect": true
+				}
+			},
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
@@ -74,12 +106,30 @@
 					"pattern": "",
 					"name": "main",
 					"target": "main"
+				},
+				{
+					"pattern": "books/new",
+					"name": "create",
+					"target": "create"
+				},
+				{
+					"pattern": "books/{bookId}",
+					"name": "detail",
+					"target": "detail"
 				}
 			],
 			"targets": {
 				"main": {
 					"id": "main",
 					"name": "Main"
+				},
+				"detail": {
+					"id": "detail",
+					"name": "Detail"
+				},
+				"create": {
+					"id": "create",
+					"name": "Create"
 				}
 			}
 		}

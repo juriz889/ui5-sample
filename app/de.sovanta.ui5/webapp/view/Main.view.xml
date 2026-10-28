@@ -11,19 +11,67 @@
 	<Page
 		title="{i18n>appTitle}"
 		id="page">
+		<headerContent>
+			<Button
+				id="helloButton"
+				text="{formatter: 'formatter.formatValue', path: 'i18n>btnText'}"
+				press=".sayHello" />
+		</headerContent>
 		<content>
-			<IllustratedMessage
-				title="{i18n>appTitle}"
-				illustrationType="sapIllus-SuccessHighFive"
-				enableVerticalResponsiveness="true"
-				description="{i18n>appDescription}">
-				<additionalContent>
-					<Button
-						id="helloButton"
-						text="{formatter: 'formatter.formatValue', path: 'i18n>btnText'}"
-						press=".sayHello" />
-				</additionalContent>
-			</IllustratedMessage>
+			<Table
+				id="booksTable"
+				noDataText="{i18n>booksTableNoData}"
+				growing="true"
+				growingThreshold="20"
+				items="{
+					path: '/ListOfBooks',
+					sorter: { path: 'title' }
+				}">
+				<headerToolbar>
+					<OverflowToolbar>
+						<Title text="{i18n>booksTableTitle}" level="H2" />
+						<ToolbarSpacer />
+						<Button
+							id="createButton"
+							icon="sap-icon://add"
+							text="{i18n>createButton}"
+							type="Emphasized"
+							press=".onCreatePress" />
+					</OverflowToolbar>
+				</headerToolbar>
+				<columns>
+					<Column>
+						<Text text="{i18n>colTitle}" />
+					</Column>
+					<Column minScreenWidth="Tablet" demandPopin="true">
+						<Text text="{i18n>colAuthor}" />
+					</Column>
+					<Column minScreenWidth="Tablet" demandPopin="true">
+						<Text text="{i18n>colGenre}" />
+					</Column>
+					<Column hAlign="End">
+						<Text text="{i18n>colStock}" />
+					</Column>
+					<Column hAlign="End">
+						<Text text="{i18n>colPrice}" />
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem
+						type="Navigation"
+						press=".onBookPress">
+						<cells>
+							<ObjectIdentifier title="{title}" />
+							<Text text="{author}" />
+							<Text text="{genre}" />
+							<ObjectNumber number="{stock}" />
+							<ObjectNumber
+								number="{price}"
+								unit="{currency}" />
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
 		</content>
 	</Page>
 

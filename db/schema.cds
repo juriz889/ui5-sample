@@ -13,7 +13,7 @@ entity Books : managed {
       title    : localized String       @mandatory;
       descr    : localized String;
       genre    : Association to Genres;
-      stock    : Integer;
+      stock    : Integer @assert.range: [0, 10000];
       price    : Price;
       currency : Currency;
 }
