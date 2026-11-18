@@ -1,56 +1,37 @@
-<mvc:View
-	controllerName="de.sovanta.ui5.controller.Detail"
-	displayBlock="true"
-	xmlns="sap.m"
-	xmlns:mvc="sap.ui.core.mvc"
-	xmlns:form="sap.ui.layout.form">
+<mvc:View controllerName="de.sovanta.ui5.controller.Detail"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page
+        id="bookDetailPage"
+        title="{i18n>detailTitle}"
+        showNavButton="true"
+        navButtonPress=".onNavBack"
+        showFooter="{detailView>/editMode}"
+        busyIndicatorDelay="0">
+        <content>
+            <ObjectHeader
+                id="bookHeader"
+                title="{title}"
+                number="{price}"
+                numberUnit="{currency/symbol}"
+                responsive="true">
+                <attributes>
+                    <ObjectAttribute title="{i18n>colAuthor}" text="{author}" />
+                    <ObjectAttribute title="{i18n>colGenre}" text="{genre/name}" />
+                </attributes>
+                <statuses>
+                    <ObjectStatus
+                        title="{i18n>colStock}"
+                        text="{stock}"
+                        state="{= ${stock} > 0 ? 'Success' : 'Error' }" />
+                </statuses>
+            </ObjectHeader>
 
-	<Page
-		id="detailPage"
-		title="{i18n>detailTitle}"
-		showNavButton="true"
-		navButtonPress=".onNavBack">
-		<content>
-			<ObjectHeader
-				id="bookHeader"
-				responsive="true"
-				title="{title}"
-				number="{price}"
-				numberUnit="{currency_code}">
-				<attributes>
-					<ObjectAttribute
-						title="{i18n>colAuthor}"
-						text="{author}" />
-					<ObjectAttribute
-						title="{i18n>colGenre}"
-						text="{genre/name}" />
-				</attributes>
-				<statuses>
-					<ObjectStatus
-						title="{i18n>colStock}"
-						text="{stock}"
-						state="{= ${stock} > 0 ? 'Success' : 'Error' }" />
-				</statuses>
-			</ObjectHeader>
-			<form:Form
-				id="bookForm"
-				editable="false">
-				<form:layout>
-					<form:ColumnLayout columnsM="2" columnsL="3" columnsXL="4" />
-				</form:layout>
-				<form:formContainers>
-					<form:FormContainer title="{i18n>detailSectionInfo}">
-						<form:formElements>
-							<form:FormElement label="{i18n>detailDescription}">
-								<form:fields>
-									<Text text="{= ${descr} || ${i18n>detailNoDescription} }" />
-								</form:fields>
-							</form:FormElement>
-						</form:formElements>
-					</form:FormContainer>
-				</form:formContainers>
-			</form:Form>
-		</content>
-	</Page>
+            <Panel id="descrPanel" headerText="{i18n>detailDescription}" class="sapUiResponsiveMargin" width="auto"
+                >
+                <Text id="descrText" text="{descr}" />
+            </Panel>
 
+        </content>
+    </Page>
 </mvc:View>
