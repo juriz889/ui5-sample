@@ -1,29 +1,16 @@
-<mvc:View
-	controllerName="de.sovanta.ui5.controller.Main"
-	displayBlock="true"
+<mvc:View controllerName="de.sovanta.ui5.controller.Main" displayBlock="true"
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc"
-	xmlns:core="sap.ui.core"
-	core:require="{
+	xmlns:core="sap.ui.core" core:require="{
 		formatter: 'de/sovanta/ui5/model/formatter'
 	}">
 
-	<Page
-		title="{i18n>appTitle}"
-		id="page">
+	<Page title="{i18n>appTitle}" id="page">
 		<headerContent>
-			<Button
-				id="helloButton"
-				text="{formatter: 'formatter.formatValue', path: 'i18n>btnText'}"
-				press=".sayHello" />
+			<Button id="helloButton" text="{formatter: 'formatter.formatValue', path: 'i18n>btnText'}" press=".sayHello" />
 		</headerContent>
 		<content>
-			<Table
-				id="booksTable"
-				noDataText="{i18n>booksTableNoData}"
-				growing="true"
-				growingThreshold="20"
-				items="{
+			<Table id="booksTable" noDataText="{i18n>booksTableNoData}" growing="true" growingThreshold="20" items="{
 					path: '/ListOfBooks',
 					sorter: { path: 'title' }
 				}">
@@ -31,12 +18,7 @@
 					<OverflowToolbar>
 						<Title text="{i18n>booksTableTitle}" level="H2" />
 						<ToolbarSpacer />
-						<Button
-							id="createButton"
-							icon="sap-icon://add"
-							text="{i18n>createButton}"
-							type="Emphasized"
-							press=".onCreatePress" />
+						<Button id="createButton" icon="sap-icon://add" text="{i18n>createButton}" type="Emphasized" press=".onCreatePress" />
 					</OverflowToolbar>
 				</headerToolbar>
 				<columns>
@@ -57,17 +39,13 @@
 					</Column>
 				</columns>
 				<items>
-					<ColumnListItem
-						type="Navigation"
-						press=".onBookPress">
+					<ColumnListItem type="Navigation" press=".onBookPress">
 						<cells>
 							<ObjectIdentifier title="{title}" />
 							<Text text="{author}" />
 							<Text text="{genre}" />
 							<ObjectNumber number="{stock}" />
-							<ObjectNumber
-								number="{price}"
-								unit="{currency}" />
+							<ObjectNumber number="{price}" unit="{currency}" />
 						</cells>
 					</ColumnListItem>
 				</items>
